@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+		.logo {
+  width: 125px;
+  height: 184px;
+  background-image: url("img/morel.svg");
+  background-position: center bottom;
+  padding:0px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;justify-content: center;height: 100vh;align-items:center;
+}
+/*s*/
+@media only screen and (min-width: 376px) and (max-width: 599px) {
+  .logo {
+      background-position: center 504px;
+      width: 187px;
+      height: 275px;
+  }
+}
+ /* xl */
+
+@media only screen and (min-width: 1227px){
+  .logo {
+    background-position: center top;
+    width: 560px;
+    height: 258px;
+  }
+}
+/*l */
+@media only screen and (min-width: 1040px) and (max-width: 1226px) {
+  .logo {
+    background-position: center 1335px;
+    width: 520px;
+    height: 240px;
+  }
+}
+
+/*ml*/
+@media only screen and (min-width: 798px) and (max-width: 1039px) {
+  .logo {
+    background-position: center 1050px;
+    width: 396px;
+    height: 260px;
+  }
+}
+
+/*m*/
+@media only screen and (min-width: 600px) and (max-width: 797px) {
+  .logo {
+    background-position: center 745px;
+    width: 300px;
+    height: 197px;
+  }
+}
+
+
+	</style>
+</head>
+<body>
+<header class="header" style="">
+  <div style="max-width: 50%">
+    <div class="logo"></div>
+  </div>
+</header>
+</body>
+</html>
