@@ -30,14 +30,7 @@ body {
   transition: .5s ease;
 }
 
-.container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
 
-.container:hover {
-  cursor: pointer;
-}
 .text {
   color: white;
   font-size: 20px;
@@ -50,19 +43,64 @@ body {
   text-align: center;
 }
 
-.basis{
-flex-basis:calc(25% - 2rem);
+  .basis{
+  flex-basis:calc(100% - 2rem);
+  background:blue;
+  flex-grow:0;
+  padding:1rem;
+  }
+
+/*for desktop devices*/
+@media (hover: hover) {
+  .price {
+    display: none;
+  }
+
+  .container:hover ~ .price {
+    display: block;
+  }
+
+    .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .container:hover {
+    cursor: pointer;
+  }
 }
 
-.price {
-  display: none;
+/*for touch devices*/
+@media (hover: none)  {
+  .price {
+    display: block;
+  }
+   .container:active .overlay {
+    bottom: 0;
+    height: 100%;
+  }
 }
 
-.container:hover ~ .price {
-  display: block;
+/*s styling*/
+@media screen and (min-width: 376px) and (max-width:599px) {
+  .basis{
+  flex-basis:calc(50% - 2rem);
+  }
 }
 
+/*ml & m styling*/
+@media screen and (min-width: 600px) and  (max-width:1039px) {
+  .basis{
+  flex-basis:calc(33% - 2rem);
+  }
+}
 
+/*l & xl styling*/
+@media screen and (min-width:1040px) {
+  .basis{
+  flex-basis:calc(25% - 2rem);
+  }
+}
 </style>
 </head>
 <body>
@@ -72,7 +110,7 @@ flex-basis:calc(25% - 2rem);
 
   <div style="display: flex;flex-direction: row;flex-wrap:wrap;align-items: stretch;margin: 1rem -1rem 1rem -1rem;background:green">
 
-    <div class="basis" style="background:blue;flex-grow:0;padding:1rem">
+    <div class="basis">
       <div class="container">
         <img src="img/libro-6.jpg" alt="Avatar" class="image">
         <div class="overlay">
@@ -85,42 +123,67 @@ flex-basis:calc(25% - 2rem);
       </div>
     </div>
 
-    <div class="basis" style="background:blue;flex-grow:0;padding:1rem">
+    <div class="basis">
       <div class="container">
         <img src="img/libro-6.jpg" alt="Avatar" class="image">
         <div class="overlay">
           <div class="text">Hello World</div>
         </div>
       </div>
-    </div>
-    <div class="basis" style="background:blue;flex-grow:0;padding:1rem">
-      <div class="container">
-        <img src="img/libro-6.jpg" alt="Avatar" class="image">
-        <div class="overlay">
-          <div class="text">Hello World</div>
-        </div>
-        <div class="price" style="margin: 3%;">
+      <div class="price" style="margin: 3%;">
               Franela de Andres Bello<br>
           <div style="margin-top: 0.5rem">30 $</div>
-        </div>
       </div>
     </div>
-    <div class="basis" style="background:blue;flex-grow:0;padding:1rem">
+        <div class="basis">
       <div class="container">
         <img src="img/libro-6.jpg" alt="Avatar" class="image">
         <div class="overlay">
           <div class="text">Hello World</div>
         </div>
       </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
     </div>
-      <div class="basis" style="background:blue;flex-grow:0;padding:1rem">
+        <div class="basis">
       <div class="container">
         <img src="img/libro-6.jpg" alt="Avatar" class="image">
         <div class="overlay">
           <div class="text">Hello World</div>
         </div>
       </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
     </div>
+        <div class="basis">
+      <div class="container">
+        <img src="img/libro-6.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
+    </div>
+        <div class="basis">
+      <div class="container">
+        <img src="img/libro-6.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      <div class="price" style="margin: 3%;">
+              Franela de Andres Bello<br>
+          <div style="margin-top: 0.5rem">30 $</div>
+      </div>
+    </div>
+   
  
 
   </div>
