@@ -1,0 +1,40 @@
+    .autor-pagina {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items: baseline;
+  margin-bottom: 3.125em;
+  margin-top:2.5em;
+  background-color: var(--background);
+  
+}
+
+.autor-pagina .portada {
+
+max-width: 80%;
+justify-content: center;
+}
+
+.autor-pagina .responsive {
+  width: auto;
+  max-width: 100%;
+}
+
+.autor-pagina .portada .img-frame {
+  text-align: center;  
+}
+
+/*xs, s & m styling*/
+@media screen and (max-width: 798px) {
+  .autor-pagina .portada .img-frame {
+    padding: 0 15.1% 0 15.1%;
+  }
+
+  .autor-pagina .portada {
+    max-width: 100%;
+  }
+
+  .autor-pagina .responsive {
+    width: 100%;
+  }
+}
