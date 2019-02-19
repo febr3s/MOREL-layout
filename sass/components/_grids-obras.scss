@@ -40,16 +40,7 @@ margin:.688rem -1rem 3.125rem -1rem
   text-align: center;
 }
 
-.text h1 {
- font-size: 1.4rem;
-}
 
-.text h1:hover {
- font-weight: 600;
- color:var(--background);
- background:var(--color-2);
- border-style:none;
-}
 
   .basis{
   flex-basis:calc(100% - 2rem);
