@@ -13,18 +13,46 @@
         right: 0;
         bottom: 0;
         left: 0;
-        text-align: center;
         background-color: rgba(0,0,0,.4);
+        overflow: scroll;
       }
       .modal-body {
-        width: 200px;
-        background-color: #fff;
-        border-radius: 4px;
-        padding: 15px;
+        max-width: 97%;
+        background-color: var(--background);
+       
       }
-      .modal-content {
-        padding: 15px;
-      }
+      
       .modal-footer {
-        overflow: hidden;
+        /*overflow: hidden;*/
+      }
+
+      .modal .ficha-extract, .modal .ficha-title, .modal .ficha-metadata {
+        padding-right: 5% !important;
+        padding-left: 5% !important;
+      }
+
+      .modal .ficha-metadata {
+        line-height: initial;
+        text-align:center;
+      }
+      
+      .modal label, .modal button {
+        margin-right: 5%;
+      }  
+
+    @media screen and (min-width: 601px)   {
+      .modal .ficha-extract, .modal .ficha-title, .modal .ficha-metadata {
+        padding-right: 15.1% !important;
+        padding-left: 15.1% !important;
+      }
+    }
+    @media screen and (min-width: 601px) and (max-width: 798px) {
+            .modal-body {
+              max-width: 90% !important;
+            }
+          }
+    @media screen and (min-width: 799px) {
+        .modal-body {
+          max-width: 70% !important;
+        }
       }
