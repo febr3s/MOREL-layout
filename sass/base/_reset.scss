@@ -21,6 +21,11 @@ a.morel:hover {
   color:var(--color-2);
   cursor: pointer;
 }
+
+footer a.morel{
+  font-weight: 300;
+}
+
 body {
   background-color: var(--background);
   color: var(--color-1);

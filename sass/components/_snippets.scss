@@ -14,11 +14,12 @@ input[type=email] {
     font-size: 1.4rem;
     transition: all 1s ease;
     width: 100%;
+    max-width: 400px;
 }
 
 input[type=email]:focus {
     
-    border:.185em solid var(--color-2);
+    border:.125em solid var(--color-2);
 }
 
 input[type=submit] {
@@ -50,3 +51,22 @@ input[type=submit]:hover {
 label.input {
     font-size: 1.4rem;
 }
+
+/*footer*/
+.footer-row {
+    display: flex;flex-wrap: wrap;padding:1rem 1rem;align-items: center;text-align: center;
+}
+
+.footer-col { 
+line-height: 2rem;flex-basis: 100%;align-self: center;padding: 1rem 0px;
+ }
+
+ @media screen and (min-width: 799px) {
+    .footer-col {
+        flex-basis: 33.33%;
+    }
+
+    .footer-row {
+        text-align: left;
+    }
+ }
