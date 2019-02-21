@@ -7,9 +7,9 @@
       .modal {
         display: none;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
         position: fixed;
-        top: 0;
+        top: 2.5rem;
         right: 0;
         bottom: 0;
         left: 0;
@@ -33,20 +33,47 @@
 
       .modal .ficha-metadata {
         line-height: initial;
-        text-align:center;
+        text-align:left;
+        /*display: block;*/
       }
       
       .modal label, .modal button {
-        margin-right: 5%;
+        
       }  
 
-    @media screen and (min-width: 601px)   {
+      .modal .btn-container {
+        margin: 1rem 0 1rem 0;
+      }
+
+      .modal label.morel {
+          color: var(--color-1);
+          font-weight: 600;
+          transition: all 1s ease;
+}
+
+      .modal label.morel:hover {
+        color:var(--color-2);
+        cursor: pointer;
+      }
+      
+    @media screen and (min-width: 601px) {
+      .modal .ficha-metadata {
+        display: flex;
+      }
+      .modal .btn-container {
+        flex-basis: 33%;
+        padding: 0px 2% 0px 2%;
+      }
+
+    }
+      
+    @media screen and (min-width: 375px)   {
       .modal .ficha-extract, .modal .ficha-title, .modal .ficha-metadata {
         padding-right: 15.1% !important;
         padding-left: 15.1% !important;
       }
     }
-    @media screen and (min-width: 601px) and (max-width: 798px) {
+    @media screen and (min-width: 375px) and (max-width: 798px) {
             .modal-body {
               max-width: 90% !important;
             }
