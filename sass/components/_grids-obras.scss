@@ -4,7 +4,7 @@
 flex-direction: row;
 flex-wrap:wrap;
 align-items: stretch;
-margin:.688rem -1rem 3.125rem -1rem
+margin:.688rem -1rem 5rem -1rem
 }
 
 .container {
@@ -71,7 +71,7 @@ margin:.688rem -1rem 3.125rem -1rem
     display: block;
   }
 
-    .container:hover .overlay {
+    .container:hover .overlay, .masobras .overlay {
     bottom: 0;
     height: 100%;
   }

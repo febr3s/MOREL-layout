@@ -72,7 +72,7 @@ p:first-of-type::first-letter {
   font-weight: 500;
 }
 
-label.button {
+label.button, button {
     font-size: 1.4rem;
     font-family: 'Kanit', "Lucida Console", Monaco, monospace;
     color: var(--color-1);
