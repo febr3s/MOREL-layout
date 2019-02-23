@@ -70,3 +70,43 @@ line-height: 2rem;flex-basis: 100%;align-self: center;padding: 1rem 0px;
         text-align: left;
     }
  }
+
+ /*participar panel*/
+.participar {
+        
+        flex-basis: 100%;
+      }
+.participar .button {
+    text-align: right;
+}
+
+.participar-right {
+    padding-left: 15.1%;
+    padding-right: 15.1%; 
+}
+
+.participar .ficha-extract {
+        padding-right: 15.1%;
+    }
+    .participar .ficha-title {
+        padding-right: 15.1%;
+    }
+
+@media screen and (min-width: 799px) {
+    .participar {
+        flex-basis: 50%;     
+    }
+    .participar-right {
+      
+     padding-left: 0px; 
+    }
+
+    .participar .ficha-extract {
+        padding-right: 6%;
+    }
+
+    .participar .ficha-title {
+        padding-right: 6%;
+    }
+
+}

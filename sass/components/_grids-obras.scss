@@ -13,11 +13,15 @@ margin:.688rem -1rem 5rem -1rem
 
 .image {
   display: block;
-  width: calc(100% - 12px);
+  width: 100%;
   height: auto;
-  border: 1px solid #ddd;padding: 5px;background-color: var(--background);
 }
 
+.autores .image {
+  width: calc(100% - 12px);
+  border: 1px solid #ddd;padding: 5px;background-color: var(--background);
+
+}
 .overlay {
   position: absolute;
   bottom: 100%;
