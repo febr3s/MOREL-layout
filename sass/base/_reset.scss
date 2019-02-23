@@ -11,6 +11,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 }
 
+html {
+  font-size: 12px;
+}
+
 a.morel {
   color: var(--color-1);
   font-weight: 600;
@@ -104,4 +108,16 @@ label:hover.button {
   list-style-position: inside;
   margin-left: 5%;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  html {
+    font-size: 16px;
+  }
 }
