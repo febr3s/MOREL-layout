@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css" media="screen">
+.myText {
+	visibility: hidden;
+}
+.myText:before {
+	content: "M";
+}
+.myText::after {
+	content: "word";
+	color: red;
+	position: absolute;
+	left: 100px;
+}
+
+	</style>
+</head>
+<body>
+<span class="myText">MOREL</span>
+</body>
+</html>

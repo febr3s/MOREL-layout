@@ -17,7 +17,7 @@ html {
 
 a.morel {
   color: var(--color-1);
-  font-weight: 600;
+  font-weight: 500;
   transition: all 1s ease;
 }
 
@@ -71,7 +71,7 @@ p {
   margin-top: 1rem;
 }
 
-p:first-of-type::first-letter {
+p.morel:first-of-type::first-letter {
   font-size: 2rem;
   font-weight: 500;
 }

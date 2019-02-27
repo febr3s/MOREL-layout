@@ -110,3 +110,20 @@ line-height: 2rem;flex-basis: 100%;align-self: center;padding: 1rem 0px;
     }
 
 }
+
+/* branding words*/
+b.morel-word {
+    font-weight: 700;
+    font-transform: uppercase;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+b.morel-word::first-letter {
+    color: var(--color-2) !important; 
+    font-weight: 700 !important;
+}
+
+b.site-word {
+    font-size: 1.25em;
+}
