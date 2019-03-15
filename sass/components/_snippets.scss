@@ -61,6 +61,10 @@ label.input {
 line-height: 2rem;flex-basis: 100%;align-self: center;padding: 1rem 0px;
  }
 
+ .footer {
+    font-weight: 400;
+ }
+
  @media screen and (min-width: 799px) {
     .footer-col {
         flex-basis: 33.33%;

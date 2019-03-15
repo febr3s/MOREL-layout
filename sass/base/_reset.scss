@@ -75,7 +75,7 @@ h3 {
 }
 
 /*hash link workaround*/
-h3::before { 
+h3::before, h2::before { 
   display: block; 
   content: " "; 
   margin-top: -3em; 

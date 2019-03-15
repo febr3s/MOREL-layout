@@ -97,10 +97,33 @@ margin:.688rem -1rem 5rem -1rem
   }
 }
 
+/*xs styling*/
+@media screen and (max-width: 375px) {
+     .price .title {
+   font-size: 1.7rem;
+   line-height: 1.7rem;
+  }
+
+  .price .autor {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+  }
+
+}
+
 /*s styling*/
 @media screen and (min-width: 376px) and (max-width:599px) {
   .basis{
   flex-basis:calc(50% - 2rem);
+  }
+   .price .title {
+   font-size: 1.5rem;
+   line-height: 1.5rem;
+  }
+
+  .price .autor {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
