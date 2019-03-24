@@ -1,5 +1,5 @@
 /*miscelaneas*/
-.sombra {
+.sombra-solida {
   box-shadow: 2px 2px 5px 0px;
 }
 
@@ -52,6 +52,16 @@ label.input {
     font-size: 1.4rem;
 }
 
+input[type=search] {
+  border: .125em solid #ccc;
+  font-size: 1.4rem;
+  transition: all 1s ease;
+  width: 100%;
+  max-width: 400px; }
+
+input[type=search]:focus {
+  border: 0.125em solid var(--color-2); }
+
 /*footer*/
 .footer-row {
     display: flex;flex-wrap: wrap;padding:1rem 1rem;align-items: center;text-align: center;
@@ -64,6 +74,7 @@ line-height: 2rem;flex-basis: 100%;align-self: center;padding: 1rem 0px;
  .footer {
     font-weight: 400;
  }
+
 
  @media screen and (min-width: 799px) {
     .footer-col {

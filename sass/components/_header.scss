@@ -8,8 +8,13 @@
 }
 
 .header {
-  display: flex;justify-content: center;height: 75vh;align-items:center;
+  display: flex;justify-content: center;height: 65vh;align-items:center;text-align: center;
 }
+
+.logo-container input, .logo-container a {
+    display: none;
+  }
+
 /*s*/
 @media only screen and (min-width: 376px) and (max-width: 599px) {
   .header .logo {
@@ -57,7 +62,7 @@
 /*header*/
 
 .logo-container {
-  max-width: 50%
+  max-width: 50%;
 }
 
 /*xs styling*/
@@ -67,6 +72,10 @@
 /*Desde s hasta xl*/
 @media screen and (min-width: 600px) {
   .header {
-    height: 90vh !important;;
+    height: 70vh !important;;
+  }
+
+  .logo-container input, .logo-container a {
+    display: inline;
   }
 }

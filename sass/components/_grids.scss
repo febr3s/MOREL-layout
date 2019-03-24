@@ -1,7 +1,8 @@
 /*general*/
 
 .main-container {
-  max-width: 1227px;margin: auto;padding: 1%
+  margin: auto;padding: 1%;
+  background-color: #ebebeb;
 }
 
 .column {
@@ -52,11 +53,15 @@ line-height: 0;
 
 
 .row {
+  max-width: calc(1227px + 2rem);
+  margin:auto;
+  margin-top: .688rem;
+  margin-bottom: 9.125rem;
   display: flex;
 flex-direction: row;
 flex-wrap:wrap;
 align-items: stretch;
-margin:.688rem -1rem 3.125rem -1rem
+/*margin:.688rem -1rem 3.125rem -1rem*/
 }
 
 /*ciudades*/
@@ -98,12 +103,14 @@ margin:.688rem -1rem 3.125rem -1rem
 
 
 .obra-dia {
+  max-width: 1227px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   align-items: baseline;
-  margin-bottom: 50px;
-  margin-top:27px;
+  margin-bottom: 9.125rem;
+  margin-top:2rem;
   background-color: var(--background);
   
 }
