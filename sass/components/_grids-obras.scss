@@ -109,7 +109,21 @@ margin:.688rem -1rem 5rem -1rem
 @media (hover: none)  {
   .price {
     display: block;
+    line-height: 1rem;
+    font-size: 1.05rem;
+    /*background-color: rgba(249,249,249,0.6);*/
+    margin: 3%;
   }
+
+  .price .title {
+    font-weight: 600;
+    margin-top: 1.7rem;
+  }
+
+  .price .autor {
+    margin-top: 0.7rem;
+  }
+  
    .container:active .overlay {
     bottom: 0;
     height: 100%;

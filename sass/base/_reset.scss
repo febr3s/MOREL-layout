@@ -12,11 +12,21 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 }
 
+/*otros colores
+#f2ecff
+#ccc
+#faf8ff
+#faf8ff
+#8d8d8d
+*/
+
 html {
   font-size: 12px;
 }
 a {
   text-decoration: none;
+  outline: none;
+  color: var(--color-1);
 }
 
 a.morel, footer a {
@@ -35,6 +45,8 @@ a.morel:hover, a.metadata-input:hover, footer a:hover {
   color:var(--color-2);
   cursor: pointer;
 }
+
+
 
 footer {
   background-color: var(--background);
@@ -87,7 +99,7 @@ h3 {
 }
 
 /*hash link workaround*/
-h3::before, h2::before { 
+h3::before, h2::before, h1::before { 
   display: block; 
   content: " "; 
   margin-top: -3em; 

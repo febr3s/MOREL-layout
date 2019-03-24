@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.tienda .logo {
+   background-image: url("../img/morel-tienda.svg");
+}
+
 .header {
   display: flex;justify-content: center;height: 65vh;align-items:center;text-align: center;
 }
@@ -63,6 +67,7 @@
 
 .logo-container {
   max-width: 50%;
+  margin-top: 2rem;
 }
 
 /*xs styling*/
