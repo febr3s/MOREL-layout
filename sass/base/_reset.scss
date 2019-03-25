@@ -50,8 +50,8 @@ a.morel:hover, a.metadata-input:hover, footer a:hover {
 
 footer {
   background-color: var(--background);
-  min-width: 100%;}
-  /*box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.16), 0 -2px 10px 0 rgba(0, 0, 0, 0.12);padding-bottom: 0px*/
+  min-width: 100%;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.16), 0 -2px 10px 0 rgba(0, 0, 0, 0.12);padding-bottom: 0px}
 
 footer .main-container {
   background-color: var(--background)
