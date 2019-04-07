@@ -15,6 +15,7 @@ input[type=email] {
     transition: all 1s ease;
     width: 100%;
     max-width: 400px;
+    padding:0.5rem;
 }
 
 input[type=email]:focus {
@@ -57,7 +58,8 @@ input[type=search] {
   font-size: 1.4rem;
   transition: all 1s ease;
   width: 100%;
-  max-width: 400px; }
+  max-width: 400px;
+  padding:0.5rem; }
 
 input[type=search]:focus {
   border: 0.125em solid var(--color-2); }

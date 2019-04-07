@@ -2,7 +2,7 @@
 
 .main-container {
   margin: auto;padding: 1%;
-  background-color: #ebebeb;
+  background-color: var(--fondo);
 }
 
 .column {
@@ -51,6 +51,10 @@ align-self: center;
 line-height: 0;
 }
 
+.sombra {
+  max-width: 1227px;
+  margin:auto;
+}
 
 .row {
   max-width: calc(1227px + 2rem);
