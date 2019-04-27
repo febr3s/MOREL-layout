@@ -3,8 +3,11 @@
 <head>
 	<title></title>
 	<style type="text/css" media="screen">
-	
- .logo {
+
+#b1 { background-image: url('1.svg'); }
+#b2 { background-image: url('2.svg'); }
+
+.logo {
     width: 125px;
   height: 184px;
   background-image: url("img/morel.svg");
@@ -70,5 +73,20 @@
     <div class="logo"></div>
   </div>
 </header>
+<script type="text/javascript">
+	function run(interval, frames) {
+    var int = 1;
+    
+    function func() {
+        document.body.id = "b"+int;
+        int++;
+        if(int === frames) { int = 1; }
+    }
+    
+    var swap = window.setInterval(func, interval);
+}
+
+run(1000, 3); //milliseconds, frames
+</script>
 </body>
 </html>

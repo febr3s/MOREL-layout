@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+            #faderBack,
+            #faderFront,
+            #inFrontOfBoth
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            #faderFront
+            {
+                background: url("4.jpg") no-repeat center top;
+            }
+ </style>
+</head>
+<body>
+
+ <div id="container">
+
+    <div id="faderBack"></div>
+    <div id="faderFront"></div>
+    <div id="inFrontOfBoth">Hello World</div>
+</div>
+<script type="text/javascript">
+ //populate image set
+ var imageAry = ["1.jpg","2.jpg","3.jpg","4.jpg"];
+ //in milliseconds
+ var fadeSpeed = "1000";
+ var timeout = 3000;
+
+
+function fadeInFront (i){
+    $('#faderFront').css( {
+        "background-image" : "url("+imageAry[i]+")"
+    });
+    $('#faderFront').fadeIn(fadeSpeed);
+    i++;
+    if (i==imageAry.length){i=0;}
+    setTimeout(function(){
+        fadeOutFront(i);
+    },timeout);
+}
+function fadeOutFront (i){
+    $('#faderBack').css( {
+        "background-image" : "url("+imageAry[i]+")"
+    });
+    $('#faderFront').fadeOut(fadeSpeed);
+    i++;
+    if (i==imageAry.length){i=0;}
+    setTimeout(function(){
+        fadeInFront(i);
+    },timeout);
+}
+ function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+$(document).ready(function(){
+    preload(imageAry);
+    setTimeout(function(){
+        fadeOutFront(3);
+    },timeout);
+});
+</script>
+</body>
+</html>
+
+
+
+ 
+
+ 
