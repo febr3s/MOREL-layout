@@ -18,36 +18,24 @@
                   <img src="http://placehold.it/350x300?text=1">
                   | libros
                 </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=2">
-                </div>
+             
                 <div>
                   <img src="http://placehold.it/350x300?text=3">
                   | indumentaria
                 </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=4">
-                </div>
+                
                 <div>
                   <img src="http://placehold.it/350x300?text=5">
                   | chucherías
                 </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=6">
-                </div>
-                <div>
+                
+                <div class="logo-slide">
                   
                 </div>
-                <div>
-                  
-                </div>
+                
         </div>
 
   </div>
-</header>
-    <section class="regular slider">
-    
-  </section>
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
@@ -55,29 +43,12 @@
     $(".regular").slick({
         dots: false,
         infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        speed: 0,
-        pauseOnHover: false,
       });
     }); 
-</script>
-<script type="text/javascript">
-  function run(interval, frames) {
-    var int = 1;
-        
-    function func() {
-        document.querySelector(".logo").id = "b"+int;
-        int++;
-        if(int === frames) { int = 1; }
-    }
-    
-    var swap = window.setInterval(func, interval);
-}
-
-run(1000, 9); //milliseconds, frames
 </script>
 </body>
 </html>
