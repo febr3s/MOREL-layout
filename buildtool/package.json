@@ -1,0 +1,30 @@
+{
+  "name": "buildtool",
+  "version": "1.0.0",
+  "description": "npm as buildtool",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "postcss-cli": "^6.1.2"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.3.0",
+    "http-server": "^0.11.1",
+    "jshint": "^2.10.2",
+    "uglify-js": "^3.5.10",
+    "watch": "^1.0.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "info": "echo 'npm as buildtool'",
+    "lint": "echo '=> linting' && jshint assets/scripts/*.js",
+    "minify:js": "echo '=> minify:js' && uglifyjs assets/scripts/main.js -o dist/public/js/main.min.js",
+    "minify:css": "echo '=> minify:css' && cleancss assets/css/main.css -o dist/public/css/main.min.css",
+    "post-css": "echo '=> post-css' && postcss assets/css/main.css --use autoprefixer -o dist/public/css/main.min.css",
+    "watch": "watch 'npm run minify:js && npm run minify:css' assets/scripts assets/css",
+    "build": "echo '=> building' && npm run minify:js -s && npm run minify:css -s && npm run post-css -s",
+    "server": "http-server dist/public/"
+  },
+  "author": "sitepoint",
+  "license": "ISC"
+}
